@@ -47,7 +47,7 @@ utk_book_url = "https://live-wsbook.e-utkarsh.com/metainfo/getAllChaptersMetaInf
 data = {"username":"","password":"","siteId":"1"}
 cleanr = re.compile("<.*?>")
 os.makedirs("./htmls", exist_ok=True)
-
+)
 @bot.on_message(filters.command(["login"])& ~filters.edited)
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text("Send **ID & Password** in this manner otherwise bot will not respond.\n\nSend like this:-  **ID*Password**"
